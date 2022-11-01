@@ -626,29 +626,29 @@ global.dfail = (type, m, conn) => {
   if (msg) return m.reply(msg)
   }
   global.dfails = (jid, buffer, content, footer, button1, row1, button2, row2, quoted) => {
-          conn.send2ButtonLoc(m.chat, fetch(fla + 'Kamu Belum Terima Rules Bot!').buffer(), `Rules Undefined Bot
+          conn.send2ButtonLoc(m.chat, fetch(fla + 'Kamu Belum Terima Rules Bot!').buffer(), `RULES Yuni-MD
           1. Dilarang spam
           2. Dilarang untuk menggunakan command 18+ berlebihan (ketahuan = ban) 
           3. Dilarang memasukkan bot Tanpa izin Owner ataupun Police
           4. Bot harus admin jika ingin menggunakan fitur admin! 
           5. enable restrict untuk mengaktifkan fitur admin
           
-          Rules Pengguna Undefined Bot
+          RULES PENGGUNA Yuni-MD
           1. Dilarang spam & telpon bot
           2. Dilarang share nomor bot
           3. Dilarang menggunakan bot untuk hal yang tidak berguna
           4. Dilarang untuk membandingkan Undefined bot dengan yang lain
           5. Lapor bug ke Owner dan Police jika ditemukan
           
-          Rules Admin & Group Undefined Bot
+          RULES ADMIN & GROUP Yuni-MD
           1. Gunakan end group dengan otak di kepala jangan otak di dengkul
           2. Jangan spam invite dan kick menggunakan fitur bot
           3. Jika ada yang spam, bantu group close (untuk menghindari Overload) 
           4. Gk suka sama Undefined bot? kick aja bodoh
           
           Owner & Police bot berhak banned permanen / sementara dan leave group jika ada yang melanggar! 
-          Hormat kami Staff Undefined Bot
-          `, '©Undefined Bot', 'Terima', '.terima', 'Tidak', '.tidak', m)
+          Hormat kami Staff Yuni-MD
+          `, 'Yuni-MD | ©ᵈʳкσкσ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×', 'Terima', '.terima', 'Tidak', '.tidak', m)
   	
 }
 

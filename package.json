@@ -53,7 +53,7 @@
         "human-readable": "^0.2.1",
         "hxz-api": "^1.0.1",
         "jsdom": "^18.1.1",
-        "link-preview-js": "^2.1.15",
+        "link-preview-js": "^2.1.17",
         "lodash": "^4.17.21",
         "lowdb": "^2.1.0",
         "moment-timezone": "^0.5.34",

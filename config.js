@@ -1,21 +1,21 @@
-global.you = ['6285850539404'] 
+global.you = ['6283863727744'] 
 //Developer Bot
 global.gc = 'https://chat.whatsapp.com/I5Kz3Abawc5DqyBSDoYvKB'
-global.rowner = ['6285850539404'] // Real Owner Bot
-global.owner = ['6285850539404'] // Owner Bot
-global.police = ['6285850539404'] // Police Bot
-global.mods = ['6285850539404']  // Want some help?
-global.prems = ['6285850539404'] // Premium user has unlimited limit
-global.fotonya1 = 'https://telegra.ph/file/00ca947f49354f6c108da.jpg' //ini kalo mau di ganti silahkan ganti aja
-global.fotonya2 = 'https://telegra.ph/file/00ca947f49354f6c108da.jpg' //gw lupa nih foto apa aja:v
-global.fotonya3 = 'https://telegra.ph/file/00ca947f49354f6c108da.jpg' //ini juga ganti
-global.fotonya4 = 'https://telegra.ph/file/00ca947f49354f6c108da.jpg' //ini juga ganti
-global.fotonya5 = 'https://telegra.ph/file/00ca947f49354f6c108da.jpg' //ini juga ganti
-global.fotonya6 = 'https://telegra.ph/file/00ca947f49354f6c108da.jpg' //ini ganti pakai foto sosialmedia mu
-global.fotonya7 = 'https://telegra.ph/file/00ca947f49354f6c108da.jpg'
-global.instagram = 'https://instagram.com/Jarotr_'
+global.rowner = ['6283863727744'] // Real Owner Bot
+global.owner = ['6283863727744'] // Owner Bot
+global.police = ['6283863727744'] // Police Bot
+global.mods = ['6283863727744']  // Want some help?
+global.prems = ['6283863727744'] // Premium user has unlimited limit
+global.fotonya1 = 'https://telegra.ph/file/6433c5e9e7710aeeffeb5.jpg' //ini kalo mau di ganti silahkan ganti aja
+global.fotonya2 = 'https://telegra.ph/file/6433c5e9e7710aeeffeb5.jpg' //gw lupa nih foto apa aja:v
+global.fotonya3 = 'https://telegra.ph/file/6433c5e9e7710aeeffeb5.jpg' //ini juga ganti
+global.fotonya4 = 'https://telegra.ph/file/6433c5e9e7710aeeffeb5.jpg' //ini juga ganti
+global.fotonya5 = 'https://telegra.ph/file/6433c5e9e7710aeeffeb5.jpg' //ini juga ganti
+global.fotonya6 = 'https://telegra.ph/file/6433c5e9e7710aeeffeb5.jpg' //ini ganti pakai foto sosialmedia mu
+global.fotonya7 = 'https://telegra.ph/file/6433c5e9e7710aeeffeb5.jpg'
+global.instagram = 'https://instagram.com/kokopangeran_'
 
-global.helper = ['6285850539404']
+global.helper = ['6283863727744']
 global.APIs = { // API Prefix
   // name: 'https://website'
   amel: 'https://melcanz.com',
@@ -67,7 +67,7 @@ global.socket = {
 
 global.useMulti = false
 
-global.media = 'https://telegra.ph/file/1a432751096d4d399a8c4.jpg'
+global.media = 'https://telegra.ph/file/6433c5e9e7710aeeffeb5.jpg'
 
 /*=========== TYPE DOCUMENT ===========*/
 global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
@@ -76,16 +76,16 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/537edd58e7f8849a7dc50.jpg'
+global.thumbdoc = 'https://telegra.ph/file/0f9e2cc2de5389f9d80e2.jpg'
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '564588643' // default 10TB
 global.fpagedoc = '444'
 
 // Sticker WM
-global.packname = 'Jarot offc'
-global.author = 'Jarot offc'
-global.wm = '© Jarot offc'
+global.packname = 'Yuni-MD'
+global.author = '©ᵈʳкσкσ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×'
+global.wm = 'Yuni-MD | ©ᵈʳкσкσ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 

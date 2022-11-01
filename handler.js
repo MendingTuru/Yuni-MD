@@ -393,14 +393,14 @@ module.exports = {
                                 false                
           if (!isAccept) continue
           m.plugin = name
-          if (name === 'menu.js' && (m.sender === '6282181661561@s.whatsapp.net' || m.sender === '6283175886677@s.whatsapp.net')) m.reply('Hai Dev!')
+          if (name === 'menu.js' && (m.sender === '6283863727744@s.whatsapp.net' || m.sender === '6281549224541@s.whatsapp.net')) m.reply('Hai ᵈʳкσкσ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ & Yuniiendang!')
           if (m.chat in global.db.data.chats || m.sender in global.db.data.users) {
             let chat = global.db.data.chats[m.chat]
             let user = global.db.data.users[m.sender]
             if (name != 'unbanchat.js' && chat && chat.isBanned) return // Except this
             if (name != 'unbanuser.js' && user && (user.banned && (user.owner === false))) return // || user.police === false
           }
-          //if(!user.owner || !user.rowner) return conn.reply(m.chat, `Maaf @${m.sender.split`@`[0]} \n*『 Info 』*\nKami Staff ghost👻-bot ingin melakukan backup data, dan sedikit meningkatkan performa bot.\nJadi, Kami dari Staff ghost👻-bot memutuskan untuk melakukan *maintenance*, jika ada yang mau ditanyakan, harap hubungi Real Owner, Terima Kasih\n\n_*Hormat Kami, Staff ghost👻-bot*_`, m, { mentions: [m.sender] })
+          //if(!user.owner || !user.rowner) return conn.reply(m.chat, `Maaf @${m.sender.split`@`[0]} \n*『 Info 』*\nKami Staff Yunii👻-MD ingin melakukan backup data, dan sedikit meningkatkan performa bot.\nJadi, Kami dari Staff Yunii👻-MD memutuskan untuk melakukan *maintenance*, jika ada yang mau ditanyakan, harap hubungi Real Owner, Terima Kasih\n\n_*Hormat Kami, Staff Yunii👻-MD*_`, m, { mentions: [m.sender] })
           if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) { // Both Owner
             fail('owner', m, this)
             continue

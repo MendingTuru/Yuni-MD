@@ -46,7 +46,7 @@
         "cheerio": "^1.0.0-rc.10",
         "colors": "1.4.0",
         "emoji-unicode": "^2.0.1",
-        "file-type": "^16.5.3",
+        "file-type": "^16.5.4",
         "form-data": "^4.0.0",
         "g-i-s": "^2.1.6",
         "google-it": "^1.6.2",

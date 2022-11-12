@@ -1,7 +1,7 @@
 {
-    "name": "oscar-md",
+    "name": "yuni-md",
     "version": "1.0.2",
-    "description": "Oscar Multi Device",
+    "description": "Yuni Multi Device",
     "depecrated": false,
     "main": "index.js",
     "directories": {
@@ -23,7 +23,7 @@
     ],
     "homepage": "Soon",
     "author": {
-        "name": "Jarot"
+        "name": "Koko Pangeran"
     },
     "repository": {
         "type": "git",

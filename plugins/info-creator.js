@@ -28,22 +28,22 @@ VERSION:3.0
 N:;;;
 FN: ᯤ 𝙅𝙖𝙧𝙤𝙩 𝙊𝙛𝙘
 item.ORG: ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ
-item1.TEL;waid=6285850539404:6285850539404@s.whatsapp.net
+item1.TEL;waid=6283863727744:6283863727744@s.whatsapp.net
 item1.X-ABLabel: ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ
-item2.EMAIL;type=INTERNET: Jarott@gmail.com
+item2.EMAIL;type=INTERNET: pangeran.dwnta01@gmail.com
 item2.X-ABLabel:📫 Gmail
-item3.ADR:;;📍 Acehnese - Indonesian;;;;
+item3.ADR:;;📍 Jakarta - Indonesian;;;;
 item3.X-ABADR:ac
 item3.X-ABLabel:📮 Location Owner
-item4.URL:https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ
+item4.URL:https://youtube.com/channel/UC_nKNU3Htf4Bp_wkhj3pVXQ
 item4.X-ABLabel:Youtube
-item5.URL:https://github.com/Alpiii22
+item5.URL:https://github.com/MendingTuru
 item5.X-ABLabel:Github
-item6.URL:https://instagram.com/jarotr_
-item6.X-ABLabel:Instagram Jarot
-item7.URL:http://Instagram.com/alpiii.rsy
-item7.X-ABLabel: Instagram Alpi
-item1.TEL;waid=6285943036511:6285850539404@s.whatsapp.net
+item6.URL:https://instagram.com/kokopangeran_
+item6.X-ABLabel:Instagram Pangeran
+item7.URL:http://Instagram.com/kokopangeran_
+item7.X-ABLabel: Instagram Pangeran
+item1.TEL;waid=6283863727744:6283863727744@s.whatsapp.net
 item1.X-ABLabel: Creator Bot
 END:VCARD`
 const sentMsg  = await conn.sendMessage(
@@ -55,7 +55,7 @@ const sentMsg  = await conn.sendMessage(
         }
     }
 )
-let jarot = 'https://telegra.ph/file/1b4913c4196e640732efa.jpg'
+let jarot = 'https://telegra.ph/file/63d157733afce65388504.jpg'
 await conn.send3ButtonImg(m.chat, jarot, `${ucapan()}\n\nHallo mypren, @${m.sender.split`@`[0]} 👋\nIni nomor owner botnya, jangan di spam ya\nKalau mau disave syarat nya harus pakai profile Sendiri\nKalau gak ada profile gak bakalan direspon\nJika penting langsung chat Owner\n\n⫹⫺ Date : *${week} ${date}*\n⫹⫺ Time : *${wib}*`, wm, 'Source', '.sc', 'Menu', '.menu', 'Donasi', '.donasi', sentMsg)}
 handler.help = ['owner']
 handler.tags = ['info']

@@ -1,19 +1,18 @@
 let fetch = require('node-fetch')
+let axios = require('axios')
 let handler = async (m, { conn, args }) => {
 if (!args[0]) throw 'Uhm..url nya mana?'
-m.reply('tunggu')
-let res = await fetch(`https://botcahx.ddns.net/api/dowloader/tikok?url=${args[0]}`)
-if (!res.ok) throw await res.text()
-let json = await res.json()
-if (!json.status) throw json
-let { video, description, username } = json.result
-await conn.sendFile(m.chat, video, 'video.mp4', `
-\n💌 *Deskripsi*: ${description}
-\n\n📛 *Username*: ${username}
-\n\n🏢 *By*: Koko Pangeran 
-`, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+m.reply('wait')
+ let res = (await axios.get(API('males', '/tiktok', { url: args[0] } ))).data;
+if (res.status != 200) throw res.message;
+if (!res) throw res.message;
+let result = `❖❖⟝⟮ *𝚃𝚒𝚝𝚕𝚎:* ⟯⟞❖❖
+ ${res.title}
+❖❖⟝⟮ *Author* ⟯⟞❖❖
+${res.author}
+`
+await conn.sendFile(m.chat, res.video, 'video.mp4', result, m)
 }
-
 handler.help = ['tiktok <url>']
 handler.tags = ['downloader']
 

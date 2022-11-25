@@ -581,13 +581,19 @@ module.exports = {
     await this.updateBlockStatus(from, 'block')
     if(opts['clearCallWhereAutoBlock']) user.call = 0
   }, 
-  async participantsUpdate({ id, participants, action }) {
-if (oasync onGroupUpdate(info){
+async onGroupUpdate(info){
       let { id, participants, action } = info
       let chat = global.chats[id]
       let text = ''
       switch(action){
-       case 'add':
+      	case 'promote':
+          case 'demote':
+              if(chat.detect) return
+              (action === 'promote') ? text = (chat.sPromote || conn.spromote) : text = (chat.sPromote || conn.sdemote) 
+              text = text.replace('@user', '@'+participants[0].split`@`[0])
+              this.sendMessage(id, { text: text, mentions: participants}) 
+          break
+          case 'add':
           case 'remove':
               if(chat.welcome) return
               let groupMetadata = await this.groupMetadata(id)
@@ -598,13 +604,6 @@ if (oasync onGroupUpdate(info){
               	pp = await conn.profilePictureUrl(participants[0], 'image')
               } catch (e) { console.log(e) }
               this.sendMessage(id, { caption: text, image: pp, fileName: 'pp.jpg', mentions: participants})
-          break
-      	case 'promote':
-          case 'demote':
-              if(chat.detect) return
-              (action === 'promote') ? text = (chat.sPromote || conn.spromote) : text = (chat.sPromote || conn.sdemote) 
-              text = text.replace('@user', '@'+participants[0].split`@`[0])
-              this.sendMessage(id, { text: text, mentions: participants}) 
           break
       }
   }

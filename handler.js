@@ -582,42 +582,32 @@ module.exports = {
     if(opts['clearCallWhereAutoBlock']) user.call = 0
   }, 
   async participantsUpdate({ id, participants, action }) {
-if (opts['self']) return
-// if (id in conn.chats) return // First login will spam
-if (global.isInit) return
-let chat = global.db.data.chats[id] || {}
-let fetch = require('node-fetch')
-let text = ''
-switch (action) {
-case 'add':
-case 'remove':
-if (chat.welcome) {
-let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
-for (let user of participants) {
-let pp = await this.profilePictureUrl(user, 'image')
-let welby = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome @user To Group @subject').replace('@user', '@' + participants[0].split('@')[0]).replace('@subject', groupMetadata.subject) :
-(chat.sBye || this.bye || conn.bye || '@user Leaving Group @subject :(' )).replace('@user', '@' + participants[0].split('@')[0]).replace('@subject', groupMetadata.subject)
-try {
-this.sendFile(id, pp, welby, null, { isUrl: true })
-} catch {
-this.sendFile(id, fs.readFileSync('./image/IMG-20221105-WA0095.jpg'), welby, null)
-}
-}
-}
-break
-case 'promote':
-text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
-case 'demote':
-if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
-text = text.replace('@user', '@' + participants[0].split('@')[0])
-if (chat.detect) this.sendMessage(id, text, MessageType.extendedText, {
-contextInfo: {
-mentionedJid: this.parseMention(text)
-}
-})
-break
-}
-}
+if (oasync onGroupUpdate(info){
+      let { id, participants, action } = info
+      let chat = global.chats[id]
+      let text = ''
+      switch(action){
+       case 'add':
+          case 'remove':
+              if(chat.welcome) return
+              let groupMetadata = await this.groupMetadata(id)
+              (action === 'add') ? text = (chat.sWelcome || conn.welcome).replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc) : text = (chat.sBye || conn.bye)
+              text = text.replace('@user', '@'+participants[0].split`@`[0])
+              let pp = './src/avatar_contact.png'
+              try {
+              	pp = await conn.profilePictureUrl(participants[0], 'image')
+              } catch (e) { console.log(e) }
+              this.sendMessage(id, { caption: text, image: pp, fileName: 'pp.jpg', mentions: participants})
+          break
+      	case 'promote':
+          case 'demote':
+              if(chat.detect) return
+              (action === 'promote') ? text = (chat.sPromote || conn.spromote) : text = (chat.sPromote || conn.sdemote) 
+              text = text.replace('@user', '@'+participants[0].split`@`[0])
+              this.sendMessage(id, { text: text, mentions: participants}) 
+          break
+      }
+  }
 }
 
 global.dfail = (type, m, conn) => {

@@ -588,14 +588,14 @@ async onGroupUpdate(info){
       switch(action){
       	case 'promote':
           case 'demote':
-              if(chat.detect) return
+              if(!chat.detect) return
               (action === 'promote') ? text = (chat.sPromote || conn.spromote) : text = (chat.sPromote || conn.sdemote) 
               text = text.replace('@user', '@'+participants[0].split`@`[0])
               this.sendMessage(id, { text: text, mentions: participants}) 
           break
           case 'add':
           case 'remove':
-              if(chat.welcome) return
+              if(!chat.welcome) return
               let groupMetadata = await this.groupMetadata(id)
               (action === 'add') ? text = (chat.sWelcome || conn.welcome).replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc) : text = (chat.sBye || conn.bye)
               text = text.replace('@user', '@'+participants[0].split`@`[0])
